@@ -1,0 +1,61 @@
+/* =============
+   Global Styles
+   ============= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========
+   Coloring
+   ======== */
+.preview {
+  background-color: hsl(270, 20%, 96%);
+}
+.walker {
+  background: linear-gradient(90deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+}
+.name {
+  color: white;
+}
+.status {
+  color: hsl(276, 100%, 81%);
+}
+.received {
+  color: hsl(276, 55%, 52%);
+  background-color: hsl(270, 20%, 93%);
+}
+.sent {
+  color: hsl(271, 15%, 43%);
+  background-color: white;
+}
+.offer {
+  background: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+.time {
+  color: rgba(255, 255, 255, 0.719);
+}
+.price {
+  color: white;
+}
+.placeholder {
+  color: hsl(206, 6%, 79%);
+}
+h1 {
+  color: hsl(271, 36%, 24%);
+}
+.description {
+  color: hsl(270, 7%, 64%);
+}
+
+/* ==========
+   Typography
+   ========== */
+
+body {
+  font-family: "Rubik", sans-serif;
+}
