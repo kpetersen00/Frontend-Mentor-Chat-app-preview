@@ -51,11 +51,47 @@ h1 {
 .description {
   color: hsl(270, 7%, 64%);
 }
-
+.btn {
+  outline: 1px solid rgba(255, 255, 255, 0.507);
+  background-color: hsl(293, 100%, 63%);
+}
 /* ==========
    Typography
    ========== */
 
 body {
   font-family: "Rubik", sans-serif;
+}
+
+/* =========
+   Formating
+   ========= */
+.preview {
+  width: 75vw;
+  margin: 75px auto auto auto;
+  padding: 10px;
+  border: black solid 1px;
+  border-radius: 30px;
+}
+.text {
+  margin: 10px;
+}
+.sent {
+  text-align: right;
+}
+.offer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 10px 10px;
+  border-radius: 15px;
+  border-bottom-left-radius: 5px;
+}
+.time {
+  display: flex;
+}
+.btn {
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 15px;
 }
