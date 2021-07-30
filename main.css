@@ -6,62 +6,75 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
-
+:root {
+  --clr-sub: hsl(276, 100%, 81%);
+  --clr-left: hsl(276, 55%, 52%);
+  --clr-right: hsl(271, 15%, 43%);
+  --clr-place: hsl(206, 6%, 79%);
+  --clr-heading: hsl(271, 36%, 24%);
+  --clr-paragraph: hsl(270, 7%, 64%);
+  --clr-background: hsl(0, 0%, 100%);
+  --clr-app: hsl(270, 20%, 96%);
+  --clr-submit: hsl(271, 36%, 24%);
+  --clr-radio: hsl(289, 100%, 72%);
+  --grad-light: hsl(293, 100%, 63%);
+  --grad-dark: hsl(264, 100%, 61%);
+  --fw-normal: 400;
+  --fw-bold: 500;
+  --fw-black: 700;
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
 /* ========
    Coloring
    ======== */
 .preview {
-  background-color: hsl(270, 20%, 96%);
+  background-color: var(--clr-app);
 }
 .walker {
-  background: linear-gradient(90deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  background: linear-gradient(90deg, var(--grad-dark), var(--grad-light));
 }
 .name {
-  color: white;
+  color: var(--clr-background);
 }
 .status {
-  color: hsl(276, 100%, 81%);
+  color: var(--clr-sub);
 }
 .received {
-  color: hsl(276, 55%, 52%);
+  color: var(--clr-right);
   background-color: hsl(270, 20%, 93%);
 }
 .sent {
-  color: hsl(271, 15%, 43%);
-  background-color: white;
+  color: var(--clr-left);
+  /* background-color: white; */
 }
 .offer {
-  background: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  background: linear-gradient(90deg, var(--grad-light), var(--grad-dark));
 }
 .time {
-  color: rgba(255, 255, 255, 0.719);
+  color: var(--clr-app);
 }
 .price {
-  color: white;
+  color: var(--clr-background);
 }
 .placeholder {
-  color: hsl(206, 6%, 79%);
+  color: var(--clr-place);
 }
 h1 {
-  color: hsl(271, 36%, 24%);
+  color: var(--clr-heading);
 }
 .description {
-  color: hsl(270, 7%, 64%);
+  color: var(--clr-paragraph);
 }
 .btn {
-  outline: 1px solid rgba(255, 255, 255, 0.507);
-  background-color: hsl(293, 100%, 63%);
+  outline: 1px solid var(--clr-radio);
+  background-color: var(--grad-light);
 }
 /* ==========
    Typography
    ========== */
-
-body {
-  font-family: "Rubik", sans-serif;
-}
 
 /* =========
    Formating
@@ -70,8 +83,10 @@ body {
   width: 75vw;
   margin: 75px auto auto auto;
   padding: 10px;
+  /* temp border */
   border: black solid 1px;
   border-radius: 30px;
+  /* ======================== */
 }
 .text {
   margin: 10px;
